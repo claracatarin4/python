@@ -1,15 +1,12 @@
 class Nodo:
-    
-    # Armazena um dado e uma referência ao próximo nodo:
+       
     def __init__(self, dado=0, nextnodo=None): 
         self.dado = dado
         self.proximo = nextnodo
 
-    # Representação do Nodo:
     def __repr__(self):
         return '%s -> %s' % (self.dado, self.proximo)
-    
-# Armazena o topo da pilha:
+
 class Pilha:
     def __init__(self):
         self.topo = None
@@ -28,7 +25,6 @@ class Pilha:
         self.topo = self.topo.proximo
         return valor
     
-# Retorna a lista invertida:
 def printinversa(numeros):
     pilha = Pilha()
     
